@@ -13,7 +13,7 @@ node = EventManager.listen( "core", {
 
         /* eslint no-console: 0 */
         console.log( homeView );
-        
+
         return homeView;
     }
 } );

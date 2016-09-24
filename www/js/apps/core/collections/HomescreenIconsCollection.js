@@ -1,8 +1,8 @@
 import Backbone from "strap/backbone";
-import HomescreenIconMode from "core-root/models/homescreen-icon";
+import HomescreenIconModel from "core-root/models/homescreen-icon";
 
 var HomescreenIconsCollection = Backbone.Collection.extend( {
-    "model": HomescreenIconMode
+    "model": HomescreenIconModel
 } );
 
 export default HomescreenIconsCollection;

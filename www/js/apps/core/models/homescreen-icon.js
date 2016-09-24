@@ -5,15 +5,24 @@ var HomescreenIconModel = Backbone.Epoxy.Model.extend( {
     "defaults": {
         "id": 0,
         "title": "",
-        "type": "link",
+        "type": "",
         "icon": "",
         "action": ""
     },
     "getId": function getId(){
         return this.get( "id" );
     },
-    "getTitle": function getName(){
-        return this.get( "name" );
+    "getTitle": function getTitle(){
+        return this.get( "title" );
+    },
+    "getIcon": function getIcon(){
+        return this.get( "icon" );
+    },
+    "getAction": function getAction(){
+        return this.get( "action" );
+    },
+    "getType": function getType(){
+        return this.get( "type" );
     }
 } );
 

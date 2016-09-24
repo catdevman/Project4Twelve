@@ -53,6 +53,6 @@
         "title": "Prayer List",
         "type": "view",
         "icon": "fa fa-heart",
-        "action": "https://www.mapquest.com/search/results?centerOnResults=1&query=410%20N.%20Kingston%20Road,%20Plymouth,%20IN&slug=%2Fus%2Fin%2Fplymouth%2F46563-2308%2F410-n-kingston-rd-41.343277,-86.296225"
+        "action": "/prayer-list"
     }
 ]
