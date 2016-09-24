@@ -11,6 +11,9 @@ node = EventManager.listen( "core", {
     "home": function homeEventHandler(){
         var homeView = new HomeView();
 
+        /* eslint no-console: 0 */
+        console.log( homeView );
+        
         return homeView;
     }
 } );

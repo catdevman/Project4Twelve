@@ -78,7 +78,6 @@ project4TwelveConf.output = {
     "filename": "project4twelve.js"
 };
 
-console.log( project4TwelveConf );
 module.exports = function webpackConfigLoader(){
     return {
         "project4twelve": project4TwelveConf

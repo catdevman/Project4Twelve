@@ -13,6 +13,7 @@ module.exports = function productionTaskGenerator( grunt ){
             "replace",
             "concat:project4twelve",
             "uglify:project4twelve",
+            "copy:cordova",
 
             "postcss:lint",
             "sass",
