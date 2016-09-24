@@ -21,16 +21,22 @@ CoreHomeView = Backbone.Epoxy.View.extend( {
     "template": _.template( tmpl ),
 
     "initialize": function initialize(){
-        var cards = new CardGrid( {
-            "collection": new HomescreenIconCollection( homescreenIcons ),
+        var cards = {};
+        var self = this;
+
+
+        self.collection = new HomescreenIconCollection();
+        _( homescreenIcons ).each( ( icon ) => {
+            self.collection.add( icon );
+        } );
+
+        cards = new CardGrid( {
+            "collection": self.collection,
             "card": HomescreenIconView
         } );
 
-        // this.listenTo(
-        //     cards.vent,
-        //     "cards:click:card",
-        //     this.iconAction
-        // );
+        /* eslint no-console: 0 */
+        console.log( cards.collection );
         this.render( cards );
     },
     // "iconAction": function iconAction( data ){

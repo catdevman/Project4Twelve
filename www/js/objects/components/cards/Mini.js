@@ -33,26 +33,9 @@ var CardComponentView = Backbone.Epoxy.View.extend( {
         this.render();
     },
     "render": function render(){
-        var modelData;
-
-        function capitalizeFirstLetter( string ){
-            return string.charAt( 0 ).toUpperCase() + string.slice( 1 );
-        }
-
-        modelData = _.chain( this.model.attributes )
-                    .clone()
-                    .mapObject( ( value, key ) => {
-                        var newValue = value;
-
-                        if( key.match( /Name/ ) ){
-                            newValue = capitalizeFirstLetter( value );
-                        }
-
-                        return newValue;
-                    } )
-                    .value();
-
-        this.$el.html( this.template( modelData ) );
+        /* eslint no-console: 0 */
+        console.log( this.template );
+        this.$el.html( this.template( this.model.attributes ) );
 
         this.$el.find( ".mini.card" ).addClass( this.modifiers.join( " " ) );
 

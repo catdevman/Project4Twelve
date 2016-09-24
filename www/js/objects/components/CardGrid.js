@@ -29,6 +29,9 @@ var CardGridView = Backbone.Epoxy.View.extend( {
 
         this.card = options.card;
 
+        /* eslint no-console: 0 */
+        console.log( this.card );
+
         this.viewModel = new Backbone.Epoxy.Model( {
             "selectedCards": {}
         } );
@@ -51,15 +54,7 @@ var CardGridView = Backbone.Epoxy.View.extend( {
         this.render();
     },
     "render": function render(){
-        var context = this;
-
         this.$el.append( this.template() );
-
-        this.collection.fetch( {
-            "success": function handleSuccess( collection ){
-                context.respondToCollection( collection );
-            }
-        } );
 
         return this;
     },

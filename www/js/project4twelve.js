@@ -21,9 +21,6 @@ _( loaders ).each(
 
         loaded++;
 
-        /* eslint no-console: 0 */
-        console.log( loadedAt );
-
         if( loaded == loaders.length ){
             router.run( loadedAt );
         }

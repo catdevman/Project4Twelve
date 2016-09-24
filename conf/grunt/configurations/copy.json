@@ -39,6 +39,18 @@
             },
             {
                 "expand": true,
+                "cwd": "./node_modules/backgrid-moment-cell",
+                "src": [ "backgrid-moment-cell.css" ],
+                "dest": "./build/vendor/backgrid"
+            },
+            {
+                "expand": true,
+                "cwd": "./node_modules/backgrid-paginator",
+                "src": [ "backgrid-paginator.css" ],
+                "dest": "./build/vendor/backgrid"
+            },
+            {
+                "expand": true,
                 "cwd": "./node_modules/normalizecss",
                 "src": [ "normalize.css" ],
                 "dest": "./build/vendor/normalizecss"
@@ -93,6 +105,18 @@
                 "expand": true,
                 "cwd": "./build/js",
                 "src": [ "**/*.js" ],
+                "dest": "./www/build"
+            },
+            {
+                "expand": true,
+                "cwd": "./build/css",
+                "src": [ "**/*.css" ],
+                "dest": "./www/build"
+            },
+            {
+                "expand": true,
+                "cwd": "./build/js",
+                "src": [ "**/*.map" ],
                 "dest": "./www/build"
             }
         ]

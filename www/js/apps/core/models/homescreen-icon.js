@@ -1,14 +1,7 @@
 // Libraries
 import Backbone from "strap/backbone";
 
-var HomescreenIconModel = Backbone.Epoxy.Model.extend( {
-    "defaults": {
-        "id": 0,
-        "title": "",
-        "type": "",
-        "icon": "",
-        "action": ""
-    },
+var HomescreenIconModel = Backbone.Model.extend( {
     "getId": function getId(){
         return this.get( "id" );
     },
