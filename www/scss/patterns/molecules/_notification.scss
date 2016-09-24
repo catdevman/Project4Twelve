@@ -1,0 +1,18 @@
+#notifications-tag{
+    vertical-align: top;
+    padding-top: $size-tag-notification-vertical-adjust;
+
+    display: none;
+
+    .body{
+        background-color: $color-notification;
+
+        &:before{
+            border-right-color: $color-notification;
+        }
+    }
+
+    &.active{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,9 @@
+h1{
+    @extend %font-nixie-one;
+
+    line-height: $size-text-xxl;
+    font-size: $size-text-xxl;
+    font-weight: normal;
+
+    padding: 1rem 0;
+}

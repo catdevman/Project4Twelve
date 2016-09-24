@@ -1,0 +1,39 @@
+<div class="clear">
+    <h1 class="buffer">Test Import Component</h1>
+    <div id="test-import" class="box">
+    </div>
+    <div class="fr">
+        <button id="do-final">Upload Validated Files</button>
+    </div>
+</div>
+
+<hr />
+
+<button id="toggle-parts">Toggle Individual File Upload Components</button>
+<div id="parts">
+    <h1 class="buffer">(Real) File Upload Component</h1>
+    <div id="upload" class="box">
+    </div>
+
+    <h1 class="buffer">File Upload Adder Component</h1>
+    <div id="adder" class="box">
+    </div>
+
+    <h1 class="buffer">File Upload File Component</h1>
+    <div id="file" class="box">
+    </div>
+
+    <h1 class="buffer">File Upload Controls Component</h1>
+    <div id="controls" class="box">
+    </div>
+
+
+    <h1 class="buffer">Old File Uploaders</h1>
+
+    <form enctype="multipart/form-data" method="post" action="/demo/file-receiver.php">
+        <input type="file" name="<%= chance.string( { 'length': 4, 'pool': 'abcdefghijklmnopqrstuvwxyz' } ) %>" /><br />
+        <input type="file" name="<%= chance.string( { 'length': 4, 'pool': 'abcdefghijklmnopqrstuvwxyz' } ) %>" /><br />
+        <input type="file" name="<%= chance.string( { 'length': 4, 'pool': 'abcdefghijklmnopqrstuvwxyz' } ) %>" multiple="multiple" /><br />
+        <button type="submit">Upload files</button>
+    </form>
+</div>

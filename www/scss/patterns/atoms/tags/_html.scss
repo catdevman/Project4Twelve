@@ -1,0 +1,14 @@
+html{
+    @extend %font-open-sans;
+
+    box-sizing: border-box;
+    min-width: $size-page-minimum-renderable-width;
+
+    font-size: $size-base;
+    line-height: ( 2.0 * $size-base );
+    color: $color-normal-type;
+
+    background-color: $color-normal-background;
+
+    height: 100%;
+}

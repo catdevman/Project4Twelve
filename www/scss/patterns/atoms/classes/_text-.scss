@@ -1,0 +1,29 @@
+.text-{
+    &success{
+        color: $color-status-success;
+    }
+
+    &error{
+        color: $color-status-error;
+    }
+
+    &warning{
+        color: $color-status-warning;
+    }
+
+    &info{
+        color: $color-status-info;
+    }
+
+    &dark{
+        color: $color-dark;
+    }
+
+    &bright{
+        color: $color-bright-type;
+    }
+
+    &disabled{
+        color: $color-subtle-mid;
+    }
+}

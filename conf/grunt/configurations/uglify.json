@@ -1,0 +1,17 @@
+{
+    "options": {
+        "banner": "/* <%= pkg.app.name %> - <%= pkg.build %> */"
+    },
+    "project4twelve": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": "./build/js/",
+                "src": "**/project4twelve.js",
+                "dest": "./build/js/",
+                "ext": ".min.js",
+                "extDot": "last"
+            }
+        ]
+    }
+}

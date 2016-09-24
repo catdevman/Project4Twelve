@@ -1,0 +1,23 @@
+@function pick-best( $options, $with ){
+    $results: ();
+
+    @each $color in $options{
+        $contrast: contrast( $color, $with );
+        $hue: diff-hue( $color, $with );
+
+        $results: map-merge( $results, ( "#{$color}": ( $contrast + $hue ) ) );
+    }
+
+    $colors: map-keys( $results );
+    $totals: map-values( $results );
+
+    $max: nth( $totals, 1 );
+
+    @each $number in $totals{
+        @if $number > $max{
+            $max: $number
+        }
+    }
+
+    @return nth( $colors, index( $totals, $max ) );
+}

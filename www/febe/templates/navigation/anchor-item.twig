@@ -1,0 +1,11 @@
+<a
+    class="{{ menu.active ? 'active' }}"
+    href="{{ include( template_from_string( menu.behavior.link ) ) }}"
+    {% if menu.behavior.attrs|array is iterable %}
+        {% for attr, val in menu.behavior.attrs|array %}
+            {{ include( template_from_string( '{{ attr }}="{{ val }}"' ) ) }}
+        {% endfor %}
+    {% endif %}
+    >
+    {% include "navigation/text-item.twig" %}
+</a>

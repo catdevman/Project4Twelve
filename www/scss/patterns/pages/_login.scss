@@ -1,0 +1,144 @@
+$---header-height: 7.5rem;
+$---footer-height: 5.0rem;
+$---inner-height: unquote( "calc( 100vh - " )( $---header-height + $---footer-height )unquote( " )" );
+$---negative-inner-height: unquote( "calc( -100vh + " )( $---header-height + $---footer-height )unquote( " )" );
+
+body > #login-splash{
+    height: $---inner-height;
+    width: 100%;
+}
+
+body > #login-container{
+    height: $---inner-height;
+    width: 100%;
+
+    margin-top: $---negative-inner-height;
+}
+
+body > #login-splash{
+    background:{
+        image: url( "../../images/students-compressed-400x267.jpg" );
+        size: cover;
+    }
+
+    #login-splash-overlay{
+        height: 100%;
+        width: 100%;
+
+        background-color: transparentize( $color-darkest, 0.65 );
+    }
+}
+
+body > #login-container{
+    div.vertical-spacer{
+        height: 10%;
+
+        @include respond-to( "mobile", "height" ){
+            height: 0;
+        }
+    }
+
+    #translucent-container{
+        @extend .text-bright;
+
+        width: 32rem;
+
+        margin: auto;
+        padding: 3.0rem 1.5rem;
+        border-radius: 2 * $size-radius-default;
+
+        font-size: $size-text-normal;
+
+        background-color: transparentize( $color-brightest, 0.80 );
+
+        span.help{
+            padding: $size-padding-normal;
+
+            font-size: $size-text-extra;
+
+            background-color: transparentize( $color-brightest, 0.60 );
+
+            a{
+                font-size: $size-text-extra;
+            }
+
+            &.error a{
+                color: darken( $color-status-error, 25% );
+            }
+        }
+
+        a{
+            @extend .text-bright;
+
+            font-size: $size-text-xs;
+        }
+    }
+
+    #login-disabled,
+    #cannot-reset{
+        background-color: transparentize( $color-brightest, 0.60 );
+
+        span.help{
+            margin: 0;
+        }
+    }
+
+    #login-panel{
+        h4{
+            padding: 0.5rem 0;
+        }
+
+        form{
+            margin: 1rem 0;
+        }
+
+        .field{
+            background-color: transparentize( $color-brightest, 0.60 );
+
+            span.help{
+                margin-left: $size-padding-normal;
+                padding: inherit;
+
+                font-size: $size-text-normal;
+
+                background-color: transparent;
+            }
+        }
+
+        #login-header{
+            text-align: center;
+
+            margin: 0 0 2rem;
+        }
+
+        #login-credentials,
+        #long-login{
+             + .field{
+                 margin-top: $size-padding-extra;
+             }
+        }
+
+        #long-login{
+            text-align: center;
+        }
+    }
+
+    ~ footer{
+        width: 100%;
+
+        a{
+            background-color: transparent;
+
+            font-weight: 600;
+            color: $color-brightest;
+        }
+
+        span{
+            text-transform: none;
+
+            @include respond-to( "mobile", "width" ){
+                display: none;
+            }
+        }
+    }
+}

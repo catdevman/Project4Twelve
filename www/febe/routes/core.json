@@ -1,0 +1,13 @@
+[
+    {
+        "name": "home",
+        "route": {
+            "sammy": "/"
+        },
+        "page": "home",
+        "parts": {
+            "title": "Project 4:Twelve",
+            "event": "home"
+        }
+    }
+]

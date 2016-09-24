@@ -1,0 +1,17 @@
+.clear:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hide{
+    display: none;
+}
+
+.iblock{
+    display: inline-block;
+}
+
+.block{
+    display: block;
+}

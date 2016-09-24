@@ -1,0 +1,73 @@
+////
+/// @author Tom Randolph
+/// @group Helpers
+////
+
+/// Default styles for backgrid iconography
+%style-click-to{
+    font-family: "FontAwesome";
+    font-style: normal;
+
+    padding-right: 0.25em;
+    margin-right: 0.25em;
+
+}
+
+/// Cell selectors to not place the edit icon in front of in the case of click-to-icon@cell
+$ignore-cells: '.toggle-cell';
+
+/// @example scss - Set a backgrid row to allow iconography on row hovers
+///    .click-to-write table.backgrid{
+///        @include backgrid-click-to( 'write' );
+///    }
+/// @parameter {string} $do - Which action to render styles for: "write" or "edit"
+@mixin backgrid-click-to( $do ){
+    tbody tr:not(.empty){
+        @if( $do == 'write' ){
+            td.editable{
+                @extend .pointer;
+
+                &:before{
+                    @extend %style-click-to;
+
+                    color: $color-subtle-internal;
+                }
+            }
+        }
+        @else if( $do == 'edit' ){
+            @extend .pointer;
+
+            &:hover td:first-child:not(.editor):before{
+                @extend %style-click-to;
+
+                border-right: 1px solid $color-subtle-internal;
+            }
+        }
+    }
+}
+
+/// @example scss - Set the icon to use in a backgrid row hovers
+///    .click-to-edit table.backgrid{
+///        @include backgrid-click-to-icon( "\f040", "row" );
+///    }
+/// @parameter {string} $content - The Unicode code point of the character to display
+/// @parameter {string} $where - The location to place the iconography: "row" or "cell"
+@mixin backgrid-click-to-icon( $content, $where ){
+    tbody tr:not(.empty){
+        @if( $where == "cell" ){
+            $not: ':not(.editor)';
+            @each $ignore-cell in $ignore-cells{
+                $not: $not + ":not(#{$ignore-cell})"
+            }
+
+            td.editable#{$not}:before{
+                content: $content;
+            }
+        }
+        @else if( $where == "row" ){
+            &:hover td:first-child:not(.editor):before{
+                content: $content;
+            }
+        }
+    }
+}

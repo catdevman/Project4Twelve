@@ -1,0 +1,22 @@
+{
+    "en": {
+        "emptyData": {
+            "classes": {
+                "heading": "No classes found!",
+                "message": "Classes need to be created for this user before they will appear."
+            },
+            "groups": {
+                "heading": "No groups found!",
+                "message": "Groups need to be created for this user before they will appear."
+            },
+            "buildings": {
+                "heading": "No buildings found!",
+                "message": "Buildings need to be created for this user before they will appear."
+            },
+            "teachers": {
+                "heading": "No teachers found!",
+                "message": "Teachers need to be associated with this building before they will appear."
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.text-icon-left{
+    .fa{
+        margin-right: 0.25rem;
+
+        font-size: $size-text-normal;
+        vertical-align: middle;
+    }
+}
+
+.text-icon-right{
+    .fa{
+        margin-left: 0.25rem;
+
+        font-size: $size-text-normal;
+        vertical-align: middle;
+    }
+}

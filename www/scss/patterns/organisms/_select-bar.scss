@@ -1,0 +1,37 @@
+.select-bar{
+    @extend .clear;
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    button{
+        background-color: $color-subtle-background;
+
+        padding: $size-button-padding-y-small $size-button-padding-x-xs;
+        border: 0;
+        border-radius: 0;
+
+        color: $color-subtle-dark;
+        font-size: $size-text-normal;
+        line-height: $size-text-normal;
+
+        float: left;
+
+        &.active{
+            background-color: $color-dark;
+
+            color: $color-brightest;
+
+            border: 0;
+
+            + button{
+                border: 0;
+            }
+        }
+    }
+
+    button + button{
+        border-left: 1px solid $color-subtle-internal;
+    }
+}

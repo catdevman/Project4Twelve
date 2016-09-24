@@ -1,0 +1,26 @@
+a{
+    text-decoration: none;
+
+    &.button{
+        display: inline-block;
+        @extend button;
+    }
+}
+
+footer a{
+    @extend .text-bright;
+}
+
+nav a{
+    color: $color-subtle;
+}
+
+#content{
+    a{
+        color: $color-normal-type;
+    }
+
+    header a{
+        color: $color-subtle;
+    }
+}

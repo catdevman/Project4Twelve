@@ -1,0 +1,44 @@
+nav ul li{
+    @extend .clear;
+
+    float: left;
+    position: relative;
+
+    min-height: 4.0rem;
+
+    &.active{
+        background-color: $color-splash;
+    }
+
+    &:hover,
+    &.hover{
+        background-color: transparentize( $color-splash, 0.50 );
+
+        & > ul{
+            display: block;
+        }
+    }
+
+    &:first-of-type{
+        padding-left: 0;
+    }
+
+    &:last-of-type{
+        padding-right: 0;
+    }
+
+    a,
+    > span{
+        float: left;
+
+        width: 100%;
+        padding: 1rem;
+
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+
+    > span{
+        cursor: default;
+    }
+}

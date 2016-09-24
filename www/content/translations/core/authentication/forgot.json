@@ -1,0 +1,21 @@
+{
+    "en": {
+        "forms": {
+            "placeholders": {
+                "email": "Email Address"
+            }
+        },
+        "titles": {
+            "top": "Forgot Password"
+        },
+        "content": {
+            "instructions": "Enter your email below and click Reset Password to start the password reset process.",
+            "forgotDisabled": "Unfortunately, we are unable to change your account details because they are managed by your local school environment.<br />Please contact your network administrator for further assistance.",
+            "loginLink": "Back to login"
+        },
+        "buttons": {
+            "reset": "Reset Password",
+            "cancel": "Cancel"
+        }
+    }
+}

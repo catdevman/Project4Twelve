@@ -1,0 +1,6 @@
+@function make-light( $color ){
+    $light-sat: 10;
+    $light-lig: 40;
+
+    @return adjust-color( $color, $saturation: $light-sat, $lightness: $light-lig );
+}

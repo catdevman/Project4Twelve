@@ -1,0 +1,20 @@
+@mixin block-aspect-ratio( $width: 1, $height: 1, $child-selector: ".content" ){
+    $ratio: ( $height / $width ) * 100%;
+
+    position: relative;
+
+    &:before{
+        content: "";
+        display: block;
+        padding-top: $ratio;
+    }
+
+    #{$child-selector}{
+        position: absolute;
+
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}

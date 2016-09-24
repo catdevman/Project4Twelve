@@ -1,0 +1,36 @@
+body > header{
+    @extend %font-open-sans;
+
+    font-size: $size-text-large;
+    color: $color-subtle-dark;
+
+    background-color: $color-dark;
+
+    padding: 0.5rem 3rem;
+
+    a{
+        color: inherit;
+
+        &.active{
+            color: $color-subtle;
+        }
+    }
+
+    .bounding{
+        @extend .clear;
+
+        .controls{
+            @extend .clear;
+            float: right;
+
+            height: 4.5rem;
+            margin: 1rem 0;
+
+            .buttons{
+                float: left;
+
+                margin: 1.05rem 1.5rem 1.05rem 0;
+            }
+        }
+    }
+}

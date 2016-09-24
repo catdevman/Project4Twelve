@@ -1,0 +1,51 @@
+.user-panel{
+    @extend .clear;
+
+    float: right;
+
+    color: $color-brightest;
+
+    a{
+        color: inherit;
+    }
+
+    > a{
+        display: inline-block;
+        position: relative;
+
+        img,
+        .initials{
+            height: 4.5rem;
+            width: 4.5rem;
+
+            border-radius: 0.5rem;
+
+            line-height: 4.5rem;
+            text-align: center;
+
+            background-color: $color-subtle-dark;
+        }
+
+        #changelog{
+            position: absolute;
+            left: -2rem;
+            top: -2rem;
+        }
+    }
+
+    .text{
+        float: right;
+
+        margin: 0.1rem 0 0 1rem;
+
+        .name{
+            font-size: $size-text-normal;
+        }
+
+        .logout{
+            @extend .text-icon-right;
+
+            font-size: $size-text-xs;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+h2{
+    @extend %font-cabin-condensed;
+
+    line-height: $size-text-xl;
+    font-size: $size-text-xl;
+
+    padding: 1rem 0;
+}

@@ -1,0 +1,61 @@
+////
+/// @author Tom Randolph
+/// @group Colors
+////
+
+$color-normal-background: rgba( 255, 255, 255, 1 );
+$color-subtle-background: rgba( 248, 248, 248, 1 );
+$color-bright-type: rgba( 240, 240, 240, 1 );
+$color-extra-normal-type: rgba( 97, 97, 97, 1 );
+$color-normal-type: rgba( 74, 74, 74, 1 );
+$color-dark-type: rgba( 42, 42, 42, 1 );
+$color-subtle: rgba( 231, 231, 231, 1 );
+$color-subtle-mid: rgba( 151, 151, 151, 1 );
+$color-subtle-dark: rgba( 123, 130, 137, 1 );
+$color-subtle-internal: rgba( 212, 212, 212, 1 );
+$color-dark: rgba( 32, 42, 54, 1 );
+$color-mid: rgba( 44, 55, 67, 1 );
+$color-splash: rgba( 137, 185, 183, 1 );
+$color-splash-dark: rgba( 36, 124, 122, 1 );
+$color-splash-mid: rgba( 105, 144, 142, 1 );
+$color-brightest: rgba( 255, 255, 255, 1 );
+$color-darkest: rgba( 0, 0, 0, 1 );
+
+$color-normal-transparency: rgba( 0, 0, 0, 0.50 );
+$color-extra-transparency: rgba( 0, 0, 0, 0.25 );
+$color-maximum-transparency: rgba( 0, 0, 0, 0.05 );
+
+$color-tag-default: rgba( 235, 174, 82, 1 );
+$color-notification: rgba( 224, 95, 38, 1 );
+
+$color-form-input: rgba( 234, 234, 234, 1 );
+$color-form-select: $color-form-input;
+$color-form-input-disabled: rgba( 239, 239, 239, 1 );
+$color-form-input-focused: rgba( 213, 213, 213, 1 );
+
+$color-logo-word: rgba( 79, 80, 82, 1 );
+$color-logo-dw-shadow: rgba( 98, 151, 47, 1 );
+$color-logo-dw-primary: rgba( 165, 211, 29, 1 );
+$color-logo-da-shadow: rgba( 45, 112, 143, 1 );
+$color-logo-da-primary: rgba( 76, 186, 224, 1 );
+$color-logo-int-shadow: rgba( 139, 25, 30, 1 );
+$color-logo-int-primary: rgba( 228, 29, 39, 1 );
+$color-logo-eval-shadow: rgba( 92, 49, 146, 1 );
+$color-logo-eval-primary: rgba( 119, 95, 180, 1 );
+$color-logo-cm-shadow: rgba( 222, 77, 30, 1 );
+$color-logo-cm-primary: rgba( 242, 139, 20, 1 );
+
+$color-gender-male: rgba(127, 206, 224, 1);
+$color-gender-female: rgba(227, 123, 127, 1);
+
+$color-flag-warning: rgba( 255, 197, 15, 1 );
+$color-flag-error: rgba( 168, 0, 0, 1 );
+
+$color-status-success: rgba( 169, 203, 62, 1 );
+$color-status-subtle-success: lighten( rgba( 169, 203, 62, 1 ), 35% );
+$color-status-error: rgba( 211, 79, 81, 1 );
+$color-status-subtle-error: lighten( rgba( 211, 79, 81, 1 ), 35% );
+$color-status-warning: rgba( 235, 174, 82, 1 );
+$color-status-subtle-warning: lighten( rgba( 235, 174, 82, 1 ), 20% );
+$color-status-info: rgba( 104, 192, 221, 1 );
+$color-status-subtle-info: lighten( rgba( 104, 192, 221, 1 ), 35% );

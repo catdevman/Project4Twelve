@@ -1,0 +1,65 @@
+button{
+    @extend %font-open-sans-semibold;
+    @extend .text-dark;
+
+    font-size: $size-text-extra;
+    line-height: $size-text-extra;
+
+    border:{
+        width: 1px;
+        style: solid;
+        radius: $size-button-radius;
+    }
+
+    padding: $size-button-padding-y-standard $size-button-padding-x;
+
+    &.micro{
+        padding: $size-button-padding-y-micro $size-button-padding-x-micro;
+        font-size: $size-text-small;
+    }
+
+    &.xs{
+        padding: $size-button-padding-y-xs $size-button-padding-x-xs;
+    }
+
+    &.small{
+        padding: $size-button-padding-y-small $size-button-padding-x;
+    }
+
+    &.large{
+        padding: $size-button-padding-y-large $size-button-padding-x;
+    }
+
+    .field:not(.inline) &{
+        width: 100%;
+    }
+
+    &:disabled,
+    &.disabled{
+        color: darken( $color-subtle, 25% );
+
+        cursor: default;
+    }
+
+    @include button( $color-dark );
+
+    &.success{
+        @include button( $color-status-success );
+    }
+
+    &.error{
+        @include button( $color-status-error );
+    }
+
+    &.warning{
+        @include button( $color-status-warning );
+    }
+
+    &.info{
+        @include button( $color-status-info );
+    }
+
+    &:not(.primary){
+        background-color: $color-normal-background;
+    }
+}

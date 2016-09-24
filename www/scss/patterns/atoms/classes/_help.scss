@@ -1,0 +1,18 @@
+.help{
+    font:{
+        size: $size-text-small;
+        style: italic;
+    }
+
+    display: inline-block;
+
+    margin: $size-padding-small 0;
+
+    color: $color-normal-type;
+
+    cursor: help;
+
+    &.error{
+        @extend .text-error;
+    }
+}

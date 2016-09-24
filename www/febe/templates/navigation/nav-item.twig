@@ -1,0 +1,14 @@
+<li class="{{ menu.active ? 'active' }}"{% if menu.page %} data-name="{{ menu.page }}"{% endif %}>
+{% if menu.behavior is defined and menu.behavior.link is defined %}
+    {% include "navigation/anchor-item.twig" %}
+{% else %}
+    {% include "navigation/text-item.twig" %}
+{% endif %}
+{% if menu.children is iterable %}
+    <ul>
+    {% for menu in menu.children %}
+        {% include "navigation/nav-item.twig" %}
+    {% endfor %}
+    </ul>
+{% endif %}
+</li>

@@ -1,0 +1,115 @@
+/*
+
+                                          MMM7~~~~M
+   MMMMM                              MMN+=777NMMIMM
+   M?777I~~MM                       M=~7IIZ8==  =OMM
+MMMMM MI+. .87II=?M                  M~?7IIMIM.    .N8M
+MMZ7I++7M7.  O8III=8M             M+IIII?==..8     D8M
+  MMZIIII~NI..DIII+?M         MM?IIIM==.....    .MZM
+    MI=MIII+N...I?II$8MMMMMMMM7+III$==.......   .=~,M     MM
+    M=8. M?II=,..INM+~~~~=====III????M8......  $.:..M    M...M
+    MMDM,. M?I?M??+IIIIIIIIIIII???IIIII=N....  M~,..M   M,:,:M
+  M+IIIIII+N.???IIIII???????????????IIII7~D..  M~,..M  M.:..D
+M?III?????III?M??????????????????????IIII7I~.  M~..~M M.:...M
+M+IIMM   MZ~.,M?????????????????????????IIII7== .M~..I  M:,..M
+M=7M    MM++IIIII??????????????????????????IIII7=8?M:. ,MM.,..M
+M      M=IIIIINMOI????????MMMM?????????????IIII7IDM.M7:......MMM
+  OIIIMM M+$II?M?????D.  :N?????????????IIIIZ.:..,:~,M.Z.::.M
+ MIIMM    MIII+:????M      7????????????IIIIM~......:M:,...,M
+M?IM      M+II..????.       M???????????IIIIM~. .?MM:.,. ..M         MMMMMMMMMM
+MIM       MOID.M???8      ZM.7?????????IIIII7.,...:?,M....,.M   MMM....,.. .M
+M=M         MIO.O???N     OO~.D?????????IIII7N..,...D..,,,::~M MN..,,::~~,.MM
+MM           D7$.???M     7 $O.????????IIIIIDM,:8O8....:~.MMMM......,::~..M
+MM            M8$,I??N    .7 M+ I???????IIIM.=.M,..MD$DMMNM M, ......,:~: M
+        M7MM $.ZO??O     7MMI M????$M8.:.,,.$:.. ..,,:.MMM.    ....,:~..MMMMMMMMMMM
+         M:::M~+D7M7.    +ZM8 8??D::,,......M?:..NM$:.M M.      ...,::..MMDMMMMMMMMMMMMMM
+          M..D.NM....N   .ZZ. M,......     .+ZZM.,::.IMM.       ...,::.=M.MMMMMMMMMMMMMMMMMMMM
+       MMN..++NN,.     .M~.Z8......      ..:$IIZ$+++M  7        ...,,:.=~~MMMMMMMMMMMM~.MM8..,MM
+       MMO,..,.~,..          ..N+O.      ..M?II=+:::,MM.         ...,:.,~~.MMMMMMMM.:.D=:~~.MMMM
+         M~:....=:,... .OZ=,MO=+=I.       .?II=I..M,:MM.         ....,,.:: MMMMMM,::.:::::.MMMMM
+        M.~MM,..M.~:,.....  .:==~.. .....M=DI?M.::,M MM.          ....,,~:.?MMMM,,,,=,::,.MMMMMM
+           M~,,MM MM.~:,,,....M~D..,,::=:~MZIM,,MM:~M M.           ....,,:, MMM=...,,,:,.MMMMMMM
+           M.M       MMM$..........IMM...MII?O.~:MMMM MM            ....,,:  M==.....,:..MMMMMMM
+           MM               MM=7IMIIM..I.:~O?M M~.M   MM.           .....,::  N==....,: ~NMMMMMM
+                              MMM....  .,.~NI?M   M   MMM         N. .....,::  M==...,, Z=+I$O8D
+                             M...,:.   ...??III=~~$MM MMM.        NN   ...,,::  Z==..,, ,=~~~~~~
+                               M,~:..   ..8????IIIII~MMMMM.   D.  N?.   ...,,:~  +==.,,..M~~~~~~
+                                  M...    ..M7????III~MMMMM.  MD. N?N   M..,,::~ ,==+,,, M===~~~
+                                  M7:..       .,???III?MMMMI  N?. I?8. .8:..,,::, M=+,,,.77II?+=
+                                 M$8,:..        .7?III=MMMMM. 7??.???. .?I..,,::~ .=++,,..M7777I
+                                 Z?$M~~,..      .M??IIMMMMMM~.???=???. N??..,,:M~. M=+,:: M77777
+                           MMMMMM=IIZM.~:,.......8III?MMMMMMM8???D??I..???..,,ND~. I=+,,:.:77777
+                          M.,~::.?I?M  M.~~~::~~MI?II?Z8MMMMM???????8.M???,.,,O$~:  ++,,:..M7777
+                        M........,:.M    MMMMMMM$M?II+Z7INMMN???????MN????.,,=IZ~:. M+=,:. M7777
+                        M.~MMM.. ..,.M    7ZOZMM+M?II?IIII??????????8????D.,,IIN~NI M=+,:. MOZ$7
+                       M7....DD8M..M$M   M+II$  =I?II8IIIII??????????????I,,$II7~+D D=~,:, MMND8
+                    MM.:...   ..NOM,M   M=II?M  M?II?M?7IIIII???????????M.,IIII:I=Z =+,,:. +MMMM
+                    M~,..O.   ....MN....D=I??MM M?II=D++IIIIII?????????DZIIIIIMII=..++,::. +DNNM
+                    M:,.. .M.7. .,N.:,NM$7IIMM$.M?II=MDD+IIIIIIII????????IIIIIIII= N++,:~. M=?7Z
+                    M.::,...M...,:8.::,..==I::M$$?II=M~M:.IIIIIIIIIIIIIIIIIIIIII=M.++,:?~..M====
+                  MM.:.M.:::M..7NOM.~M...==.:....ZN87...,.+IIIIIIIIIIIIIIIIIIII==.M+::M~, .Z,,:~
+             MMMMMM$::..M:.~+:.N:~~.~:,..+=M.....    ..,,M8?+IIIIIIIIIIIIIIIII~=.M?:~7=~..M.....
+          MMMMMMMMMMM..M::,,.:,.:MMMM..:I?M.~,OMO   .,M?..II++=IIIIIIIIIIIII~~=MM?MIIN~..M.
+         MMMMMMMMMMMMMMMM?7MMMMMMMIIOM=DDMM.,:,........,:.MIII7+==?IIIIIII~~==M$7III=:.MM
+        MMMMMMMMMMMMMMM,.         .$OOZZ8888OD8.........MM==IIIIOZ++======IM$$IIIII::==M
+        MMMMMMMMMMMM.               ..88888NOO$ZDNMMMN8$OZMM==IIIIIIIIIIIIIIIIIIIDI===M
+       MMMMMMMMMMM$..            ..====MDM..     ..,N$$$$O7MMM==+IIIIIIIIIIIIIIII?==MM
+       MMMMMMMMMM......        .======M...            .M$$8IMMMMI+++IIIIIIIIII====MM
+        MMMMMMMM$,.............+++++8....             ...NO$MMMM8$MMMM7+++++?NMMM..
+        MMMMMMMM.:,,,,,......:++++?M......            ...,,MOMMMMMMMND8OMMM8+==.....
+         MMMMMMM.~~::::::::::IIIIID,,....................,,~.MMMMMMMMMMMMMMMO?=,........
+          MMMMMM?..~~~~~~~~~~7777IN,,,,.................,,:~.MMMMMMMMMMMMMMMMD$=,.........
+           MMMMM$7NMM$?==+?78MMMMM.:::,,,,,,,,,.....,,,,::~=.M8DNNMMMMMMMMMMMMMN8I:..........
+             MMMMM8?=~~~==+?O8DNMMM..~~~::::::::::::::~~==+..ZO+?7ZODDNMMMMMMMMMMMMN$~,.........
+              MMMMMMMMMMMMMMMMMD$MZ$MI......,~~======:....7MZZM++++++I7ZO8DNMMMMMMMMMMNZ?~,.....
+                MMMMMMMMMMMMMMMMMMMZ7?+==ZMMMMMMMMMMMM777$$$MM+++++++++++?I7$O8DNMMMMMMMMNO7+:..
+                   MMMMMMMMMMMMMMMMMMMMMO~~~~~~~===++??IMMMN???+++++????+++++++?7Z8NMMMMMMMMMNZ+
+                      MMMMMMMMMMMMMMMMMDZ$7777777777777IIIIIIIII??????????????+++++?7Z8NNMMMMMMM
+*/
+
+.arrow-box{
+    position: relative;
+
+    background: $color-brightest;
+
+    border: 1px solid $color-extra-transparency;
+    border-radius: 2 * $size-radius-default;
+    box-shadow: 0 3px 3px $color-extra-transparency;
+
+    width: 100%;
+    margin-top: $size-padding-normal;
+
+    .pointer-after,
+    .pointer-before{
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+
+        border: solid transparent;
+
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        pointer-events: none;
+
+        transition: left $quick-animation;
+    }
+
+    .pointer-after{
+        border-color: transparent;
+        border-bottom-color: $color-brightest;
+        border-width: $size-tail-arrow;
+
+        margin-left: -$size-tail-arrow;
+    }
+
+    .pointer-before{
+        border-color: transparent;
+        border-bottom-color: $color-extra-transparency;
+        border-width: $size-tail-arrow + 0.1rem;
+
+        margin-left: -( $size-tail-arrow + 0.1rem );
+    }
+}

@@ -1,0 +1,16 @@
+<script>
+    function razasus(e,t,n){var a=new XMLHttpRequest,s=[];return a.open(e,t,!0),a.setRequestHeader("Content-type","application/json; charset=utf-8"),a.onreadystatechange=a.then=function(e,t){var n,r;if(e&&e.call&&(s=[null,e,t]),4==a.readyState&&(n=s[0|a.status/200])){try{r=JSON.parse(a.responseText)}catch(u){r=a.responseText}n(r,a)}},"undefined"==typeof n?a.send():a.send(JSON.stringify(n)),a}
+</script>
+<header>
+    <div class="bounding">
+        <div class="logo">
+            <a href="/">
+                {% include "header/logo-svg.twig" %}
+                {% include "header/wordmark-svg.twig" %}
+            </a>
+        </div>
+        {% include "header/5d.twig" %}
+        {% include "header/logged-in.twig" %}
+    </div>
+</header>
+{% include "header/notifications.twig" %}

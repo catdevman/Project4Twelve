@@ -1,0 +1,6 @@
+@function contrast( $colorA, $colorB ){
+    $brightnessA: ( ( 299 * red( $colorA ) ) + ( 587 * green( $colorA ) ) + ( 114 * blue( $colorA ) ) ) / 1000;
+    $brightnessB: ( ( 299 * red( $colorB ) ) + ( 587 * green( $colorB ) ) + ( 114 * blue( $colorB ) ) ) / 1000;
+
+    @return abs( $brightnessB - $brightnessA );
+}

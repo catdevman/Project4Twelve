@@ -1,0 +1,52 @@
+$size-base: 10px;
+
+// Text, Lines
+$size-text-xxl: 3.4rem;
+$size-text-xl: 3.0rem;
+$size-text-large: 2.4rem;
+$size-text-extra: 1.6rem;
+$size-text-normal: 1.4rem;
+$size-text-small: 1.3rem;
+$size-text-xs: 1rem;
+$size-line-large: 2.2rem;
+
+// Paddings, Borders, Margins, Radii
+$size-radius-default: 0.5rem;
+$size-padding-xl: 2.2rem;
+$size-padding-large: 2.0rem;
+$size-padding-extra: 1.4rem;
+$size-padding-normal: 1.0rem;
+$size-padding-small: 0.5rem;
+$size-padding-xs: 0.2rem;
+
+// Buttons
+$size-button-radius: 0.3rem;
+$size-button-padding-x: 1.6rem;
+$size-button-padding-x-micro: 0.5rem;
+$size-button-padding-x-xs: 0.8rem;
+$size-button-padding-y-standard: 1.3rem;
+$size-button-padding-y-micro: 0.1rem;
+$size-button-padding-y-xs: 0.4rem;
+$size-button-padding-y-small: 0.9rem;
+$size-button-padding-y-large: 1.8rem;
+
+// Inputs
+$size-input-large: 2.0rem;
+
+// Tags
+$size-tag-arrow: 0.5rem;
+$size-tag-notification-vertical-adjust: 0.6rem;
+
+// Cards
+$size-card-standard-width: 20rem;
+$size-card-teacher-width: 22.5rem;
+$size-card-standard-height: 27rem;
+
+// Tails
+$size-tail-arrow: 2rem;
+$size-tail-arrow-offset: -( 2 * $size-tail-arrow );
+
+// Page
+$size-page-minimum-renderable-width: 32rem;
+$size-page-maximum-renderable-width: 120rem;
+$size-page-minimum-renderable-height: 46.5rem; // Login page is unusable below this height

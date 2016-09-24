@@ -1,0 +1,32 @@
+body > footer{
+    @extend .text-bright;
+
+    background-color: $color-dark;
+
+    text-align: center;
+    font-size: $size-text-normal;
+
+    padding: ( 1.5 * $size-padding-normal ) ( 3.0 * $size-padding-normal );
+
+    p{
+        display: inline-block;
+
+        margin: auto;
+
+        > a{
+            @extend .text-dark;
+
+            background-color: $color-subtle;
+        }
+    }
+
+    span{
+        @extend .text-icon-left;
+
+        margin-left: -$size-page-maximum-renderable-width;
+
+        float: right;
+
+        text-transform: uppercase;
+    }
+}

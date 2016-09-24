@@ -1,0 +1,9 @@
+.fa-flag{
+    &.text-warning{
+        color: $color-flag-warning;
+    }
+
+    &.text-error{
+        color: $color-flag-error;
+    }
+}

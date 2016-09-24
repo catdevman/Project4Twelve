@@ -1,0 +1,49 @@
+{% if messages is iterable and messages|length > 0 %}
+    <div class="system-message">
+        <div class="bounding">
+        {% for message in messages %}
+            {% include "system-messages/message.twig" %}
+        {% endfor %}
+        </div>
+    </div>
+    <script>
+    (function markMessageAsRead( rootUrl ){
+        var messages = document.querySelectorAll( ".system-message p[data-id]" );
+        var i = 0;
+        var message;
+        var link;
+        var id;
+
+        function wrapperCleanup(){
+            var messages = document.querySelectorAll( ".system-message p[data-id]" );
+            var container;
+
+            if( messages.length == 0 ){
+                container = document.querySelector( ".system-message" );
+
+                container.parentNode.removeChild( container );
+            }
+        }
+
+        function clickBinder( messages, index ){
+            var message = messages[ index ];
+            var link = message.querySelector( "a.close-link" );
+            var id = message.getAttribute( "data-id" );
+
+            link.addEventListener( "click", function removeMessageListener( evt ){
+                evt.preventDefault();
+
+                razasus( "POST", rootUrl + "ajax/system-messages.php?id=" + id );
+
+                message.parentNode.removeChild( message );
+
+                wrapperCleanup();
+            } );
+        }
+
+        for( i; i < messages.length; i++ ){
+            clickBinder( messages, i );
+        }
+    })( "{{ settings.site.root }}" );
+    </script>
+{% endif %}

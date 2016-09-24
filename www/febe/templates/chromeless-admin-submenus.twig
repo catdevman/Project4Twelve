@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="{{ rootUrl }}build/css/screen.min.css" />
+
+<script>
+var PIVOT_SETTINGS = "{{ settings|json_encode|toBase64 }}";
+var PIVOT_USER = "{{ user|json_encode|toBase64 }}";
+</script>
+<script defer src="{{ rootUrl }}build/js/pivot.min.js" ></script>
+<div id="content">
+    <div class="bounding">
+    {% block content %}
+        <div class="tc">
+            <p>Loading...</p>
+            <span class="fa fa-circle-o-notch fa-spin fa-3x"></span>
+        </div>
+    {% endblock content %}
+    </div>
+</div>

@@ -1,0 +1,10 @@
+{
+    "en": {
+        "titles": {
+            "top": "Login To"
+        },
+        "content": {
+            "loginDisabled": "Your individual subscription is no longer able to log into Pivot's web interface. Please contact <a href=\"mailto:<%= settings.system.fsEmail %>\"><%= settings.system.fsEmail %></a> for more information."
+        }
+    }
+}

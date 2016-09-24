@@ -1,0 +1,6 @@
+{% if menu.display.html is defined %}
+    {% include "navigation/html-part.twig" with { "display": menu.display } %}
+{% else %}
+    {% include "navigation/icon-part.twig" with { "display": menu.display } %}
+    {% include "navigation/text-part.twig" with { "display": menu.display } %}
+{% endif %}

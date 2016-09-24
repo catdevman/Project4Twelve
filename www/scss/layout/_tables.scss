@@ -1,0 +1,56 @@
+table.backgrid{
+    td,
+    th{
+        white-space: normal;
+        text-align: left;
+    }
+
+    td{
+        &.date-cell,
+        &.time-cell,
+        &.datetime-cell,
+        &.number-cell,
+        &.integer-cell,
+        &.percent-cell,
+        &.string-cell,
+        &.uri-cell,
+        &.email-cell,
+		&.moment-cell{
+            text-align: left;
+        }
+    }
+
+    td.editable{
+        @extend .pointer;
+    }
+
+    th{
+        &.sortable{
+            a{
+                white-space: normal;
+                word-wrap: break-all;
+            }
+        }
+    }
+
+    .click-to-edit &{
+        @include backgrid-click-to( 'edit' );
+        @include backgrid-click-to-icon( "\f040", "row" );
+    }
+
+    .click-to-write &{
+        @include backgrid-click-to( 'write' );
+        @include backgrid-click-to-icon( "\f044", "cell" );
+    }
+
+    .click-to-view &{
+        @include backgrid-click-to-icon( "\f06e", "row" );
+    }
+
+    tr{
+        &.selected,
+        &:hover{
+            background-color: make-pastel( rgba(82, 168, 236, 0.8) );
+        }
+    }
+}

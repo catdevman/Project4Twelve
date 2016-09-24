@@ -1,0 +1,63 @@
+@import "https://fonts.googleapis.com/css?family=Cabin+Condensed:700|Nixie+One|Open+Sans:400,400i,600,700,800";
+
+sup{
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
+code{
+    font-family: monospace;
+}
+
+kbd{
+    display: inline-block;
+
+    padding: 0.1em 0.6em;
+    border: 1px solid $color-subtle-internal;
+    border-radius: $size-radius-default;
+    margin: 0 0.1em;
+
+    background-color: $color-subtle-background;
+    color: $color-normal-type;
+    text-shadow: 0 1px 0 $color-brightest;
+    line-height: 1.4;
+    white-space: nowrap;
+
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px $color-brightest inset;
+}
+
+.fw{
+    font-family: monospace;
+}
+
+.tl{
+    text-align: left;
+}
+
+.tr{
+    text-align: right;
+}
+
+.tc{
+    text-align: center;
+}
+
+.nt{
+    text-align: normal;
+}
+
+.vt{
+    vertical-align: top;
+}
+
+.vm{
+    vertical-align: middle;
+}
+
+.vb{
+    vertical-align: bottom;
+}
+
+.italic{
+    font-style: italic;
+}

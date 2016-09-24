@@ -1,0 +1,90 @@
+{
+    "vendor": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": "./node_modules/quill/dist/",
+                "src": [ "**/quill.*" ],
+                "dest": "./build/vendor/quill"
+            },
+            {
+                "expand": true,
+                "cwd": "./node_modules/font-awesome/fonts/",
+                "src": [ "*.*" ],
+                "dest": "./build/vendor/font-awesome/fonts"
+            },
+            {
+                "expand": true,
+                "cwd": "./node_modules/font-awesome/scss/",
+                "src": [ "**/*.*" ],
+                "dest": "./build/vendor/font-awesome/scss"
+            },
+            {
+                "expand": true,
+                "cwd": "./node_modules/pikaday",
+                "src": [ "**/*.scss", "pikaday.js" ],
+                "dest": "./build/vendor/pikaday"
+            },
+            {
+                "expand": true,
+                "cwd": "./node_modules/moment-timezone",
+                "src": [ "data/**/*" ],
+                "dest": "./build/vendor/moment-timezone"
+            },
+            {
+                "expand": true,
+                "cwd": "./node_modules/backgrid/src",
+                "src": [ "**/*.css" ],
+                "dest": "./build/vendor/backgrid"
+            },
+            {
+                "expand": true,
+                "cwd": "./node_modules/normalizecss",
+                "src": [ "normalize.css" ],
+                "dest": "./build/vendor/normalizecss"
+            },
+            {
+                "expand": true,
+                "cwd": "./node_modules/qtip2/dist",
+                "src": [ "jquery.qtip.css" ],
+                "dest": "./build/vendor/qtip2"
+            },
+            {
+                "expand": true,
+                "cwd": "./node_modules/mocha",
+                "src": [ "mocha.*" ],
+                "dest": "./build/vendor/mocha"
+            }
+        ]
+    },
+    "data": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": "./www/content/data/",
+                "src": [ "**/*.*" ],
+                "dest": "./build/data"
+            }
+        ]
+    },
+    "content": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": "./www/content",
+                "src": [ "**/*" ],
+                "dest": "./build/content"
+            }
+        ]
+    },
+    "build": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": "./www/js",
+                "src": [ "require-config.js" ],
+                "dest": "./build/convert"
+            }
+        ]
+    }
+}

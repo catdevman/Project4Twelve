@@ -1,0 +1,20 @@
+form{
+    span.help{
+        font:{
+            size: $size-text-small;
+            style: italic;
+        }
+
+        display: inline-block;
+
+        margin: $size-padding-normal 0;
+
+        color: $color-extra-normal-type;
+
+        cursor: help;
+
+        &.error{
+            @extend .text-error;
+        }
+    }
+}

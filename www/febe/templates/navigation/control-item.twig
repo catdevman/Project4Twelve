@@ -1,0 +1,6 @@
+{% set menu = control %}
+{% if menu.behavior is defined and menu.behavior.link is defined %}
+    {% include "navigation/anchor-item.twig" %}
+{% else %}
+    {% include "navigation/text-item.twig" %}
+{% endif %}

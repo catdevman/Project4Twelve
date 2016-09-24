@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "options": {
+            "style": "expanded"
+        },
+        "files": {
+            "build/css/screen.css": "www/scss/screen.scss"
+        }
+    }
+}

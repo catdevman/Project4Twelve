@@ -1,0 +1,22 @@
+body > nav ul ul{
+    z-index: 2;
+    position: absolute;
+    top: 100%;
+
+    display: none;
+    min-width: 100%;
+
+    text-transform: none;
+
+    background-color: $color-splash-mid;
+
+    li{
+        float: none;
+        position: relative;
+
+        ul{
+            top: 0;
+            left: 100%;
+        }
+    }
+}

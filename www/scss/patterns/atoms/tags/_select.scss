@@ -1,0 +1,42 @@
+.field span.dropdown{
+    select{
+        // Turn off everything that's default
+        appearance: none;
+        border: 0;
+
+        // Custom design
+        background-color: $color-form-select;
+
+        width: 100%;
+        padding: $size-padding-normal $size-padding-extra;
+
+        color: $color-extra-normal-type;
+        font-size: $size-text-extra;
+
+        &:focus,
+        &:active{
+            color: $color-darkest;
+            background-color: $color-form-input-focused;
+        }
+    }
+
+    &:after{
+        color: $color-extra-normal-type;
+        line-height: $size-text-extra;
+        font:{
+            size: $size-text-large;
+            family: "FontAwesome";
+        }
+        content: "\f0d7"; // http://fontawesome.io/icon/caret-down/
+
+        border-left: 1px solid $color-subtle-mid;
+        padding: $size-padding-extra;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        cursor: default;
+        pointer-events: none;
+    }
+}

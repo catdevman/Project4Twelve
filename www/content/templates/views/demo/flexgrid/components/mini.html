@@ -1,0 +1,44 @@
+<div class="buffer">
+    <div class="mini student card pointer">
+        <div class="front">
+            <div class="indicators tr">
+                &nbsp;
+                <span class="ews-flag fa fa-fw fa-flag"></span>
+            </div>
+            <div class="visual-identity">
+                <p class="identity">
+                    <span class="initials"></span>
+                </p>
+                <img src="<%= picture %>" />
+            </div>
+            <h3><%= name.first %></h3>
+            <h3><%= name.last %></h3>
+            <div class="controls">
+                <input type="checkbox" class="select">
+            </div>
+        </div>
+        <div class="back">
+            <div class="indicators tr">
+                &nbsp;
+                <span class="ews-flag fa fa-fw fa-flag"></span>
+            </div>
+            <div class="title">
+                <div class="visual-identity">
+                    <p class="identity">
+                        <span class="initials"></span>
+                    </p>
+                    <img src="<%= picture %>" />
+                </div>
+                <h3><%= name.first %> <%= name.last %></h3>
+            </div>
+            <span class="fa fa-fw fa-institution"></span>
+            <p><%= school %></p>
+            <footer>
+                <a href="#" class="longitudinal">Longitudinal Data</a>
+            </footer>
+            <div class="controls">
+                <input type="checkbox" class="select">
+            </div>
+        </div>
+    </div>
+</div>

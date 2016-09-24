@@ -1,0 +1,39 @@
+{
+    "en": {
+        "notices": {
+            "delete": {
+                "text": "Deleting is permanent, are you sure?",
+                "buttons": {
+                    "cancel": "No, never mind.",
+                    "confirm": "Yes, I'm certain."
+                }
+            },
+            "errorHandlers": {
+                "501": "The action you tried to perform is currently under maintenance or has been disabled for your account.<br /><div>Here's some information you could provide if requested:<br /><%= code ? code : 'unknown' %>&nbsp;<%= message ? message : 'bm8gbWVzc2FnZSBwcm92aWRlZA==' %></div>"
+            },
+            "buttons": {
+                "errorConfirm": "I understand.",
+                "errorBadConfirm": "Uh oh."
+            },
+            "load": {
+                "fetching": "Fetching data..."
+            }
+        },
+        "blocked": {
+            "coming": "Coming Soon!"
+        },
+        "subdomain": {
+            "fail": "Oops.<br />It looks like you visited a link that we couldn't understand. We tried to load a subscription based on http://<%= failed %> but couldn't find a valid subscription.<br />Try logging in again with your email and password and we will attempt to locate the correct subscription."
+        },
+        "gadgets": {
+            "saver": {
+                "pending": "Saving...",
+                "saved": "Saved",
+                "failed": "Failed"
+            },
+            "required": {
+                "tip": "This field is required"
+            }
+        }
+    }
+}

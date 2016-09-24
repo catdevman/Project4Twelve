@@ -1,0 +1,108 @@
+%adder-ui-container{
+    position: relative;
+
+    border-radius: $size-radius-default;
+    border: 1px solid $color-subtle;
+
+    background-color: $color-maximum-transparency;
+
+    p{
+        padding: ( 0.25 * $size-padding-normal );
+
+        color: $color-subtle-mid;
+        font-size: ( 2 * $size-text-normal );
+        text-align: center;
+    }
+
+    span.fa{
+        @extend .tc;
+        @extend .transition;
+        @extend .block;
+        @extend .center;
+
+        color: $color-subtle;
+
+        margin-top: $size-padding-large;
+
+        &:hover,
+        &.hover{
+            color: $color-dark-type;
+        }
+    }
+
+    input[type=file]{
+        display: none;
+    }
+}
+
+.file-upload-adder{
+    position: relative;
+
+    .drag-and-drop{
+        .drop-target{
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+        }
+
+        .drop-ui{
+            @extend %adder-ui-container;
+
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .browse-ui{
+            @extend %adder-ui-container;
+            @extend .pointer;
+
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    .traditional{
+        @extend %adder-ui-container;
+        @extend .pointer;
+    }
+}
+
+.file-upload-file{
+    position: relative;
+
+    .file{
+        $file-upload-file-text-size: ( 1.1 * $size-text-normal );
+        @extend .tl;
+
+        font-size: $file-upload-file-text-size;
+
+        border-radius: $size-radius-default;
+
+        & [class*="col-"] > div{
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+            padding: $size-padding-normal;
+        }
+
+        .icon,
+        .cancel{
+            @extend .tc;
+        }
+
+        progress{
+            width: 100%;
+        }
+    }
+
+    + .file-upload-file{
+        border-top: 1px dashed $color-subtle-internal;
+    }
+}
+
+.file-upload-controls{
+    .file-upload-file + &{
+        border-top: 1px solid $color-subtle-internal;
+    }
+}

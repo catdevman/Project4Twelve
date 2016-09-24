@@ -1,0 +1,24 @@
+.toggle{
+  line-height: 100%;
+
+  label{
+    vertical-align: top;
+    line-height: 2em;
+  }
+
+  span{
+    &.fa-toggle-on,
+    &.fa-toggle-off{
+      font-size: 2em;
+      cursor: pointer;
+    }
+
+    &.fa-toggle-on{
+      color: $color-status-success;
+    }
+  }
+
+  + .toggle{
+      margin-left: $size-padding-normal;
+  }
+}

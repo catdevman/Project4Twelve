@@ -1,0 +1,72 @@
+.crate{
+    margin: 1rem 0;
+    background: $color-brightest;
+
+    &.unframed{
+        border: 0;
+    }
+
+    &.no-push{
+        margin-bottom: 0;
+    }
+
+    > .inner{
+        padding: 1.75rem;
+        border: 1px solid $color-subtle;
+        border-radius: 0 0 0.50rem 0.50rem;
+        box-shadow: 0 0 0.25rem 0 rgba( 0, 0, 0, 0.21 );
+
+        > .control{
+            text-align: right;
+
+            width: 100%;
+
+            padding: 0.5rem;
+
+            background-color: $color-subtle;
+        }
+
+        > .content{
+            padding: $size-padding-extra;
+        }
+    }
+
+    > header{
+        padding: 1rem 1.75rem;
+        border-radius: 0.50rem 0.50rem 0 0;
+
+        background-color: $color-mid;
+
+        text-align: left;
+        color: $color-brightest;
+        font-weight: 700;
+        font-size: 1.4rem;
+
+        min-height: 4rem;
+
+        > div{
+            input,
+            select,
+            textarea{
+                margin: -0.5rem 0 0;
+                padding: 0;
+
+                color: $color-dark-type;
+            }
+
+            .decorators{
+                &.separated{
+                    border-left: 1px solid $color-subtle-internal;
+                    color: $color-brightest;
+                    float: right;
+                }
+            }
+        }
+    }
+
+    footer{
+        text-align: right;
+        padding: $size-padding-normal $size-padding-extra;
+        border-top: 1px solid $color-subtle;
+    }
+}

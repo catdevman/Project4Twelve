@@ -1,0 +1,54 @@
+@mixin breakpointer( $class-names, $prefixes: "" ){
+    $breakpoints: $mobile-breakpoint, $small-breakpoint, $medium-breakpoint, $large-breakpoint;
+    $breaklabels: mobile, small, medium, large;
+
+    @each $value in $breakpoints{
+        $k: index($breakpoints, $value);
+        $min: if($k > 1, nth($breakpoints, ( $k - 1 ) ) + 1, 0);
+        $break: nth($breaklabels, $k);
+
+        @media screen and (min-width: $min){
+            @for $j from 1 through 12{
+
+                $flex-set-list: ();
+                $flex-child-list: ();
+
+                $child-width: percentage( 1 / $j );
+
+                @each $class-name in $class-names{
+                    @if $prefixes != ""{
+                        @each $prefix in $prefixes{
+                            @if $class-name == flex-set{
+                                $flex-set-list: append( $flex-set-list, unquote( ".#{$prefix}.#{$break}-#{$class-name}-#{$j}" ), comma );
+                            }
+                            @else{
+                                $flex-child-list: append( $flex-child-list, unquote( ".#{$prefix}.#{$break}-#{$class-name}-#{$j}>[class*=flex]" ), comma );
+                            }
+                        }
+                    }
+                    @else{
+                        @if $class-name == flex-set{
+                            $flex-set-list: append( $flex-set-list, unquote( ".#{$break}-#{$class-name}-#{$j}" ), comma );
+                        }
+                        @else{
+                            $flex-child-list: append( $flex-child-list, unquote( ".#{$break}-#{$class-name}-#{$j}>[class*=flex]" ), comma );
+                        }
+                    }
+                }
+
+                @if length( $flex-set-list ) > 0{
+                    #{$flex-set-list}{
+                        flex: 0 1 percentage( 1 / $j );
+                    }
+                }
+
+                @if length( $flex-child-list ) > 0{
+                    &#{$flex-child-list}{
+                        flex: 0 0 $child-width;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

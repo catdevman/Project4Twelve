@@ -1,0 +1,12 @@
+.login{
+    #login-credentials,
+    #long-login{
+         + .field{
+             margin-top: $size-padding-extra;
+         }
+    }
+
+    #long-login{
+        text-align: center;
+    }
+}

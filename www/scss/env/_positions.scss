@@ -1,0 +1,24 @@
+.center{
+    margin: auto;
+}
+
+.bump{
+    margin-top: $size-padding-large;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.nf{
+    float: none;
+}
+.centered{
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

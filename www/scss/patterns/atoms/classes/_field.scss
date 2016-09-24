@@ -1,0 +1,31 @@
+.field{
+    position: relative;
+
+    &.error{
+        input{
+            @extend .text-error;
+
+            background-color: $color-status-subtle-error;
+
+            box-shadow: inset 0 0 1px 1px;
+
+            border-color: $color-status-error;
+        }
+    }
+
+    &.success{
+        input{
+            @extend .text-success;
+
+            background-color: $color-status-subtle-success;
+
+            box-shadow: inset 0 0 1px 1px;
+
+            border-color: $color-status-success;
+        }
+    }
+
+    + .field{
+        margin-top: $size-padding-extra;
+    }
+}

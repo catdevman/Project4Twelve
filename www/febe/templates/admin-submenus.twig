@@ -1,0 +1,15 @@
+{% extends "pivot.twig" %}
+{% block body %}
+    {{ legacy( "inc/submenu.b.inc.php" )|raw }}
+    {{ legacy( "inc/subsubmenu.b.inc.php" )|raw }}
+    {{ legacy( "inc/subsubsubmenu.b.inc.php" )|raw }}
+    {% block content %}
+    <div id="content">
+        <div class="bounding">
+            <div class="tc">
+                <p>Loading...</p>
+                <span class="fa fa-circle-o-notch fa-spin fa-3x"></span>
+            </div>
+        </div>
+    {% endblock content %}
+{% endblock body %}

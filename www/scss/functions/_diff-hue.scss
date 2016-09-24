@@ -1,0 +1,15 @@
+@function diff-hue( $colorA, $colorB ){
+    $a: (
+        "red": red( $colorA ),
+        "green": green( $colorA ),
+        "blue": blue( $colorA )
+    );
+
+    $b: (
+        "red": red( $colorB ),
+        "green": green( $colorB ),
+        "blue": blue( $colorB )
+    );
+
+    @return abs( map-get( $a, "red" ) - map-get( $b, "red" ) ) + abs( map-get( $a, "green" ) - map-get( $b, "green" ) ) + abs( map-get( $a, "blue" ) - map-get( $b, "blue" ) );
+}

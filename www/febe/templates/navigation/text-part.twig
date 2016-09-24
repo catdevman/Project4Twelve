@@ -1,0 +1,3 @@
+{% if display.text is defined %}
+<span>{{ include( template_from_string( display.text ) ) }}</span>
+{% endif %}

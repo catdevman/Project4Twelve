@@ -1,0 +1,24 @@
+.control{
+    @extend .clear;
+
+    border-top: 1px solid $color-subtle-internal;
+    border-bottom: 1px solid $color-subtle-internal;
+
+    padding: ( 0.75 * $size-padding-normal ) ( 1.5 * $size-padding-normal );
+
+    &:nth-of-type( 1 ),
+    + .control{
+        border-top: none;
+    }
+
+    &:last-of-type{
+        border-bottom: none;
+    }
+
+    &.bar{
+        @extend .fl;
+        @extend .clear;
+
+        width: 100%;
+    }
+}

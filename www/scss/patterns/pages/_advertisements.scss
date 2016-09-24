@@ -1,0 +1,42 @@
+#page.module-advertisements{
+    padding-top: 4rem;
+
+    h2{
+        font-size: $size-text-xl;
+        font-weight: 700;
+
+        padding: 0;
+
+        + h2{
+            margin-top: 1rem;
+
+            font-size: 3.7rem;
+            font-weight: normal;
+        }
+    }
+
+    p{
+        margin: 4rem 0;
+
+        font-size: $size-text-extra;
+
+        @media only screen and (min-width: 1010px){
+            padding-right: 40rem;
+        }
+    }
+
+    #splash{
+        width: 65rem;
+
+        display: none;
+
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+
+        @media only screen and (min-width: 1010px){
+            display: block;
+        }
+    }
+}

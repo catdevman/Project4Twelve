@@ -1,0 +1,207 @@
+<style>
+    .basic{
+        border: 1px solid lightgrey;
+        margin-top: 1em;
+        width: 100px;
+        height: 100px;
+    }
+    .responsive{
+        border: 1px solid lightgrey;
+        text-align: center;
+        height: 100px;
+    }
+
+    .flex-row > *{
+        height: 100px;
+    }
+
+    .card{
+        width: 125px;
+    }
+
+</style>
+<div class="crate">
+    <header>
+        <h1>Freeform Flex (with wrapping static elements)</h1>
+    </header>
+    <div class="box flex-grid space-around">
+        <div class="basic flex-col">
+            <h3>1</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>2</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>3</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>4</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>5</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>6</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>7</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>8</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>9</h3>
+        </div>
+    </div>
+</div>
+
+<div class="crate">
+    <header>
+        <h1>Flex Rows (with breakpoint-responsive cell resizing)</h1>
+    </header>
+    <div class="flex-row space-around">
+        <div class="responsive flex-col medium-flex-set-5 mobile-flex-set-2">
+            <h3>1</h3>
+        </div>
+
+        <div class="responsive flex-col mobile-flex-set-2">
+            <h3>2</h3>
+        </div>
+
+        <div class="responsive flex-col">
+            <h3>3</h3>
+        </div>
+
+        <div class="responsive flex-col">
+            <h3>4</h3>
+        </div>
+    </div>
+    <div class="flex-row space-around">
+        <div class="responsive flex-col">
+            <h3>5</h3>
+        </div>
+
+        <div class="responsive flex-col mobile-flex-set-1 small-flex-set-1">
+            <h3>6</h3>
+        </div>
+
+        <div class="responsive flex-col flex-set-3">
+            <h3>7</h3>
+        </div>
+
+        <div class="responsive flex-col mobile-flex-set-4 small-flex-set-6">
+            <h3>8</h3>
+        </div>
+
+        <div class="responsive flex-col">
+            <h3>9</h3>
+        </div>
+    </div><div class="flex-row space-around">
+        <div class="responsive flex-col">
+            <h3>10</h3>
+        </div>
+    </div>
+</div>
+
+
+<div class="crate">
+    <header>
+        <h1>Length-locked Flex (3 %-width containers per row)</h1>
+    </header>
+    <div class="box flex-grid row-3 left">
+        <div class="responsive flex-col">
+            <h3>1</h3>
+        </div>
+
+        <div class="responsive flex-col">
+            <h3>2</h3>
+        </div>
+
+        <div class="responsive flex-col">
+            <h3>3</h3>
+        </div>
+
+        <div class="responsive flex-col">
+            <h3>4</h3>
+        </div>
+
+        <div class="responsive flex-col">
+            <h3>5</h3>
+        </div>
+
+        <div class="responsive flex-col">
+            <h3>6</h3>
+        </div>
+
+        <div class="responsive flex-col">
+            <h3>7</h3>
+        </div>
+
+        <div class="responsive flex-col">
+            <h3>8</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>9</h3>
+        </div>
+    </div>
+</div>
+
+<div class="crate">
+    <header>
+        <h1>Responsive Length-locked Flex (different row lengths for each breakpoint)</h1>
+    </header>
+    <div class="box flex-grid mobile-row-1 small-row-1 medium-row-2 large-row-3 left">
+        <div class="basic flex-col">
+            <h3>1</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>2</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>3</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>4</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>5</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>6</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>7</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>8</h3>
+        </div>
+
+        <div class="basic flex-col">
+            <h3>9</h3>
+        </div>
+    </div>
+</div>
+
+<div class="crate">
+    <header>
+        <h1>Basic Flex Example (mini cards)</h1>
+    </header>
+    <div class="box flex-grid" id="card-demo">
+    </div>
+</div>

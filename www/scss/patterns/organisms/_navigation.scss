@@ -1,0 +1,60 @@
+body > nav{
+    background-color: $color-mid;
+
+    @extend %font-open-sans-semibold;
+    color: $color-brightest;
+    text-transform: uppercase;
+    font-size: $size-text-normal;
+
+    padding: 0 3rem;
+
+    z-index: 1;
+
+    ul{
+        @extend .clear;
+
+        position: relative;
+    }
+
+    ~ nav{
+        li{
+            min-height: auto;
+
+            a,
+            > span{
+                float: left;
+
+                color: $color-subtle;
+                font-size: 1.5rem;
+                white-space: nowrap;
+
+                width: 100%;
+                padding: 0.3rem 0.9rem;
+            }
+
+            > span{
+                cursor: default;
+            }
+        }
+    }
+
+    $---base-nav-inside-bump: 4rem;
+    + nav{
+        padding: 0 0 0 ( 1 * $---base-nav-inside-bump );
+
+        text-transform: none;
+        font-weight: 400;
+
+        li a{
+            font-size: 1.2rem;
+        }
+
+        + nav{
+            padding: 0 0 0 ( 2 * $---base-nav-inside-bump );
+
+            ul li a{
+                font-size: 1rem;
+            }
+        }
+    }
+}

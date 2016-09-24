@@ -1,0 +1,8 @@
+{
+    "default": {
+        "src": "www/scss",
+        "options": {
+            "dest": "build/docs/style"
+        }
+    }
+}

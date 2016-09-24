@@ -1,0 +1,33 @@
+[aria-label] .fa-info-circle{
+    cursor: help;
+}
+
+.tooltip{
+    padding: 0;
+    border: 1px solid $color-subtle-mid;
+
+    box-shadow: 0 0.2rem 0.4rem 0 $color-normal-transparency;
+
+    max-width: 320px;
+    width: 320px;
+
+    .qtip-content{
+        padding: 0;
+
+        h4{
+            @extend %font-open-sans-bold;
+
+            font-size: $size-text-normal;
+
+            padding: $size-padding-extra $size-padding-large;
+            border-radius: $size-radius-default $size-radius-default 0 0;
+            border-bottom: 1px solid $color-subtle-internal;
+
+            background-color: $color-subtle;
+        }
+
+        p{
+            padding: $size-padding-extra $size-padding-large;
+        }
+    }
+}

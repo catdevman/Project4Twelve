@@ -1,0 +1,68 @@
+<nav>
+    <div class="bounding">
+        <ul>
+        {% for menu in menus %}
+            {% include "navigation/nav-item.twig" %}
+        {% endfor %}
+        </ul>
+        <script>
+            (function(){
+                var navLis = document.querySelectorAll( "body > nav:first-of-type > .bounding > ul > li" );
+
+                function loopAndDo( callback ){
+                    var i = 0;
+
+                    for( i; i < navLis.length; i++ ){
+                        callback( navLis[ i ] );
+                    }
+                }
+
+                function stopChildClicksFromPropagating( element ){
+                    var children = element.querySelectorAll( "li" ) || [];
+                    var i = 0;
+
+                    for( i; i < children.length; i++ ){
+                        children[ i ].addEventListener( "click", function( e ){
+                            e.stopPropagation();
+                        } );
+                    }
+                }
+
+                function toggleIfSubmenu( element, current ){
+                    var childUls = element.querySelector( "ul" );
+
+                    // NOTE - The reason this uses .remove and .add instead of .toggle
+                    //      is so that we guarantee a "stateless" toggle, because sometimes
+                    //      (always, currently) a menu item has already had "hover" cleared
+                    //      prior to running this function.
+                    if( childUls ){
+                        if( current ){
+                            element.classList.remove( "hover" );
+                        }
+                        else if( current !== undefined ){
+                            element.classList.add( "hover" );
+                        }
+                        else{
+                            element.classList.toggle( "hover" );
+                        }
+                    }
+                }
+
+                function removeAllHovers(){
+                    loopAndDo( function( listItem ){
+                        listItem.classList.remove( "hover" );
+                    } );
+                }
+
+                loopAndDo( function( listItem ){
+                    stopChildClicksFromPropagating( listItem );
+                    listItem.addEventListener( "click", function(){
+                        var hoveringNow = this.classList.contains( "hover" );
+                        removeAllHovers();
+                        toggleIfSubmenu( this, hoveringNow );
+                    } );
+                } );
+            })();
+        </script>
+    </div>
+</nav>

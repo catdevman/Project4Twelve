@@ -1,0 +1,37 @@
+////
+/// @author Tom Randolph
+////
+@mixin button( $color ){
+    background-color: $color;
+    border-color: $color;
+
+    &:disabled,
+    &.disabled{
+        border-color: transparentize( $color, 0.50 );
+    }
+
+    &.primary{
+        text-transform: uppercase;
+        &:not(.disabled){
+            color: $color-bright-type;
+        }
+
+        &:hover,
+        &.hover{
+            background-color: transparentize( $color, 0.25 );
+            border-color: transparentize( $color, 0.25 );
+        }
+
+        &:active,
+        &.active{
+            background-color: transparentize( $color, 0.10 );
+            border-color: transparentize( $color, 0.10 );
+        }
+
+        &:disabled,
+        &.disabled{
+            background-color: transparentize( $color, 0.75 );
+            border-color: transparentize( $color, 0.75 );
+        }
+    }
+}

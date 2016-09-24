@@ -1,0 +1,127 @@
+.logo{
+    float: left;
+
+    margin: 0.25rem 0;
+    height: 6rem;
+
+    a{
+        display: inline-block;
+        height: 6rem;
+
+        svg{
+            &#pivot-logo{
+                height: 5.2rem;
+
+                #logo-dw-shadow{
+                    fill: $color-logo-dw-shadow;
+                }
+
+                #logo-dw-primary{
+                    fill: $color-logo-dw-primary;
+                }
+
+                #logo-da-shadow{
+                    fill: $color-logo-da-shadow;
+                }
+
+                #logo-da-primary{
+                    fill: $color-logo-da-primary;
+                }
+
+                #logo-int-shadow{
+                    fill: $color-logo-int-shadow;
+                }
+
+                #logo-int-primary{
+                    fill: $color-logo-int-primary;
+                }
+
+                #logo-eval-shadow{
+                    fill: $color-logo-eval-shadow;
+                }
+
+                #logo-eval-primary{
+                    fill: $color-logo-eval-primary;
+                }
+
+                #logo-cm-shadow{
+                    fill: $color-logo-cm-shadow;
+                }
+
+                #logo-cm-primary{
+                    fill: $color-logo-cm-primary;
+                }
+
+            }
+
+            &#pivot-wordmark{
+                height: 6rem;
+
+                path{
+                    fill: $color-brightest;
+                }
+            }
+        }
+    }
+
+    &.animate{
+        #pivot-wordmark{
+            path{
+                &#wordmark-letter-p{
+                    animation: "cycle-colors" 0.5s linear 1 normal;
+                }
+
+                &#wordmark-letter-i{
+                    animation: "cycle-colors" 0.5s linear 0.2s 1 normal;
+                }
+
+                &#wordmark-letter-v{
+                    animation: "cycle-colors" 0.5s linear 0.4s 1 normal;
+                }
+
+                &#wordmark-letter-o{
+                    animation: "cycle-colors" 0.5s linear 0.6s 1 normal;
+                }
+
+                &#wordmark-letter-t{
+                    animation: "cycle-colors" 0.5s linear 0.8s 1 normal;
+                }
+            }
+        }
+    }
+
+    + #fived-tackon{
+        font-size: 1.5rem;
+
+        float: left;
+
+        margin: 4.7rem auto -0.2rem -10rem;
+    }
+}
+
+@keyframes cycle-colors{
+    0%,
+    100%{
+        fill: $color-logo-word;
+    }
+
+    17%{
+        fill: $color-logo-cm-primary;
+    }
+
+    34%{
+        fill: $color-logo-dw-primary;
+    }
+
+    51%{
+        fill: $color-logo-da-primary;
+    }
+
+    68%{
+        fill: $color-logo-int-primary;
+    }
+
+    85%{
+        fill: $color-logo-eval-primary;
+    }
+}

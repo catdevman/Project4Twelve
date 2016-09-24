@@ -1,0 +1,9 @@
+{
+    "options": {
+        "banner": "<%= pkg.banner %>"
+    },
+    "project4twelve": {
+        "src": [ "build/js/project4twelve.js" ],
+        "dest": "build/js/project4twelve.js"
+    }
+}

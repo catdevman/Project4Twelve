@@ -1,0 +1,11 @@
+{
+    "all": [
+        "www/**/*.js"
+    ],
+    "src": [
+        "www/js/**/*.js"
+    ],
+    "project4twelve": [
+        "www/js/**/*.js"
+    ]
+}

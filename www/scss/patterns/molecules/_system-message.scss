@@ -1,0 +1,17 @@
+.system-message{
+    position: relative;
+
+    background-color: $color-status-subtle-warning;
+
+    padding: 3rem;
+
+    p{
+        font-size: $size-text-normal;
+
+        + p{
+            margin-top: 2.0 * $size-base;
+            padding-top: 2.0 * $size-base;
+            border-top: 1px solid $color-subtle-mid;
+        }
+    }
+}

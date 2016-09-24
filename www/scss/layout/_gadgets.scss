@@ -1,0 +1,25 @@
+.saver{
+    display: inline-block;
+
+    margin-left: 0.75em;
+}
+
+.spinner{
+    &.fa-check{
+        color: $color-status-success;
+
+        button.success &,
+        .button.success &{
+            color: $color-dark;
+        }
+    }
+
+    &.fa-close{
+        color: $color-status-error;
+
+        button.error &,
+        .button.error &{
+            color: $color-dark;
+        }
+    }
+}

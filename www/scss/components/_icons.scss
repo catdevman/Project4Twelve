@@ -1,0 +1,13 @@
+.icon{
+    &#{-with-copy}{
+        .fa{
+            @extend .fl;
+
+            line-height: inherit;
+        }
+
+        .description{
+            margin-left: ( 1.5 * $size-padding-normal );
+        }
+    }
+}

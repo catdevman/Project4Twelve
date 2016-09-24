@@ -1,0 +1,14 @@
+{
+    "en": {
+        "titles": {
+            "top": "Login To"
+        },
+        "buttons": {
+            "student": "Login as Student",
+            "teacher": "Login as Teacher",
+            "principal": "Login as Principal",
+            "super": "Login as Superintendent",
+            "admin": "Login as Admin"
+        }
+    }
+}
