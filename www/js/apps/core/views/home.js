@@ -35,8 +35,6 @@ CoreHomeView = Backbone.Epoxy.View.extend( {
             "card": HomescreenIconView
         } );
 
-        /* eslint no-console: 0 */
-        console.log( cards.collection );
         this.render( cards );
     },
     // "iconAction": function iconAction( data ){
@@ -49,7 +47,8 @@ CoreHomeView = Backbone.Epoxy.View.extend( {
     // },
     "render": function render( cards ){
         this.$el.html( this.template( { "title": "Homescreen!" } ) );
-        cards.$el.append( ".grid" );
+
+        cards.$el.appendTo( ".grid" );
 
         return this;
     }

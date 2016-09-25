@@ -3,56 +3,56 @@
         "id": 1,
         "title": "Facebook",
         "type": "link",
-        "icon": "fa fa-facebook-official",
+        "icon": "fa fa-5 fa-facebook-official",
         "action": "https://www.facebook.com/Project4Twelve"
     },
     {
         "id": 2,
         "title": "Twitter",
         "type": "link",
-        "icon": "fa fa-twitter",
+        "icon": "fa fa-5 fa-twitter",
         "action": "https://twitter.com/p4twelve"
     },
     {
         "id": 3,
         "title": "Intagram",
         "type": "link",
-        "icon": "fa fa-instagram",
+        "icon": "fa fa-5 fa-instagram",
         "action": "https://instagram.com/p4twelve"
     },
     {
         "id": 4,
         "title": "Bible App",
         "type": "link",
-        "icon": "fa fa-book",
+        "icon": "fa fa-5 fa-book",
         "action": "https://www.bible.com/bible/111/1TI.4.12"
     },
     {
         "id": 4,
         "title": "Dream Team",
         "type": "view",
-        "icon": "fa fa-users",
+        "icon": "fa fa-5 fa-users",
         "action": "/dream-team"
     },
     {
         "id": 5,
         "title": "Website",
         "type": "link",
-        "icon": "fa fa-globe",
+        "icon": "fa fa-5 fa-globe",
         "action": "http://new-song-church.com/project-4twelve"
     },
     {
         "id": 6,
         "title": "Location",
         "type": "link",
-        "icon": "fa fa-map-marker",
+        "icon": "fa fa-5 fa-map-marker",
         "action": "https://www.mapquest.com/search/results?centerOnResults=1&query=410%20N.%20Kingston%20Road,%20Plymouth,%20IN&slug=%2Fus%2Fin%2Fplymouth%2F46563-2308%2F410-n-kingston-rd-41.343277,-86.296225"
     },
     {
         "id": 7,
         "title": "Prayer List",
         "type": "view",
-        "icon": "fa fa-heart",
+        "icon": "fa fa-5 fa-heart",
         "action": "/prayer-list"
     }
 ]

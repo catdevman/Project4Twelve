@@ -34,8 +34,10 @@ var CardComponentView = Backbone.Epoxy.View.extend( {
     },
     "render": function render(){
         /* eslint no-console: 0 */
+        console.log( "in Mini" );
         console.log( this.template );
         this.$el.html( this.template( this.model.attributes ) );
+        this.$el.find( ".visual-identity .identity span" ).addClass( this.model.get( "icon" ) );
 
         this.$el.find( ".mini.card" ).addClass( this.modifiers.join( " " ) );
 

@@ -112,12 +112,6 @@
                 "cwd": "./build/css",
                 "src": [ "**/*.css" ],
                 "dest": "./www/build"
-            },
-            {
-                "expand": true,
-                "cwd": "./build/js",
-                "src": [ "**/*.map" ],
-                "dest": "./www/build"
             }
         ]
     }

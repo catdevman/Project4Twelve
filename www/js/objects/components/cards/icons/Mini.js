@@ -9,7 +9,7 @@ var MiniIconCardComponentView = CardComponentView.extend( {
     "template": _.template( template ),
 
     "bindings": {
-        "h3.name": "text:title",
+        "h6.name": "text:title"
     },
     "events": {
         "click .card": function cardClickHandler(){
@@ -22,7 +22,6 @@ var MiniIconCardComponentView = CardComponentView.extend( {
     "initialize": function initialize( constructionData ){
         this.model = constructionData.model;
         this.modifiers = constructionData.collectionView.cardModifiers || constructionData.modifiers || [];
-
         this.render();
     }
 } );

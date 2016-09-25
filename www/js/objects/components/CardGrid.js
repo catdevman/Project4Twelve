@@ -30,7 +30,8 @@ var CardGridView = Backbone.Epoxy.View.extend( {
         this.card = options.card;
 
         /* eslint no-console: 0 */
-        console.log( this.card );
+        console.log( "in Grid" );
+        console.log( options );
 
         this.viewModel = new Backbone.Epoxy.Model( {
             "selectedCards": {}
@@ -42,7 +43,7 @@ var CardGridView = Backbone.Epoxy.View.extend( {
             function cardClickEventListener( cardData ){
                 this.vent.trigger( "cards:click:card", {
                     "id": cardData.model.id,
-                    "route": cardData.route
+                    "action": cardData.action
                 } );
             }
         );
