@@ -38,15 +38,15 @@ $size-tag-arrow: 0.5rem;
 $size-tag-notification-vertical-adjust: 0.6rem;
 
 // Cards
-$size-card-standard-width: 20rem;
-$size-card-teacher-width: 22.5rem;
-$size-card-standard-height: 27rem;
+$size-card-standard-width: 10rem;
+$size-card-teacher-width: 11.25rem;
+$size-card-standard-height: 13.5rem;
 
 // Tails
 $size-tail-arrow: 2rem;
 $size-tail-arrow-offset: -( 2 * $size-tail-arrow );
 
 // Page
-$size-page-minimum-renderable-width: 32rem;
-$size-page-maximum-renderable-width: 120rem;
-$size-page-minimum-renderable-height: 46.5rem; // Login page is unusable below this height
+$size-page-minimum-renderable-width: 16rem;
+$size-page-maximum-renderable-width: 60rem;
+$size-page-minimum-renderable-height: 23.25rem; // Login page is unusable below this height

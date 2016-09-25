@@ -9,5 +9,27 @@
             "title": "Project 4:Twelve",
             "event": "home"
         }
+    },
+    {
+        "name": "prayer-list",
+        "route": {
+            "sammy": "/prayer-list"
+        },
+        "page": "prayer-list",
+        "parts": {
+            "title": "Project 4:Twelve :: Prayer List",
+            "event": "prayer-list"
+        }
+    },
+    {
+        "name": "dream-team",
+        "route": {
+            "sammy": "/dream-team"
+        },
+        "page": "dream-team",
+        "parts": {
+            "title": "Project 4:Twelve :: Dream Team",
+            "event": "dream-team"
+        }
     }
 ]

@@ -39,7 +39,7 @@ var CardGridView = Backbone.Epoxy.View.extend( {
             function cardClickEventListener( cardData ){
                 this.vent.trigger( "cards:click:card", {
                     "id": cardData.model.id,
-                    "action": cardData.action
+                    "model": cardData.model
                 } );
             }
         );
