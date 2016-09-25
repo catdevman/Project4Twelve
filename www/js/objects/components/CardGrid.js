@@ -29,10 +29,6 @@ var CardGridView = Backbone.Epoxy.View.extend( {
 
         this.card = options.card;
 
-        /* eslint no-console: 0 */
-        console.log( "in Grid" );
-        console.log( options );
-
         this.viewModel = new Backbone.Epoxy.Model( {
             "selectedCards": {}
         } );
