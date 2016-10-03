@@ -15,13 +15,19 @@ node = EventManager.listen( "core", {
 
         return homeView;
     },
-    "prayer-list": function prayerListEventHandler(){
+    "prayerlist": function prayerListEventHandler(){
         var prayerListView = new PrayerListView();
+
+        /* eslint no-console: 0 */
+        console.log( "I got to prayer list" );
 
         return prayerListView;
     },
-    "dream-team": function dreamTeamListEventHandler(){
+    "dreamteam": function dreamTeamListEventHandler(){
         var dreamTeamView = new DreamTeamView();
+
+        /* eslint no-console: 0 */
+        console.log( "I got to dream team" );
 
         return dreamTeamView;
     }

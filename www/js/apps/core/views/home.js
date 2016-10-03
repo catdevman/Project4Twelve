@@ -14,7 +14,8 @@ import homescreenIcons from "data/homescreen-icons.json";
 // Collection
 import HomescreenIconCollection from "core-root/collections/HomescreenIconsCollection";
 
-import Window from "objects/Window";
+// Events
+import vent from "core-root/events/core/home";
 
 var CoreHomeView;
 
@@ -46,15 +47,18 @@ CoreHomeView = Backbone.Epoxy.View.extend( {
         this.render( cards );
     },
     "iconAction": function iconAction( data ){
+        var cordova = cordova;
         var model = data.model;
 
         if( model.getType() === "link" ){
             // Lauch to outside browser ???
             /* eslint no-console: 0 */
-            console.log( model.getAction() );
+            window.open( model.getAction() , "_system" );
+
+            return false;
         }
         else if( model.getType() === "view" ){
-            Window.navigate( model.getAction() );
+            vent.trigger( "open:view", { "url": model.getAction() } );
         }
     },
     "render": function render( cards ){

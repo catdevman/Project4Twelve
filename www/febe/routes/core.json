@@ -1,35 +1,35 @@
 [
     {
+        "name": "prayerlist",
+        "route": {
+            "sammy": "/index.html#prayer-list"
+        },
+        "page": "prayerlist",
+        "parts": {
+            "title": "Project 4:Twelve :: Prayer List",
+            "event": "prayerlist"
+        }
+    },
+    {
+        "name": "dreamteam",
+        "route": {
+            "sammy": "/index.html#dream-team"
+        },
+        "page": "dreamteam",
+        "parts": {
+            "title": "Project 4:Twelve :: Dream Team",
+            "event": "dreamteam"
+        }
+    },
+    {
         "name": "home",
         "route": {
-            "sammy": "/"
+            "sammy": "/index.html"
         },
         "page": "home",
         "parts": {
             "title": "Project 4:Twelve",
             "event": "home"
-        }
-    },
-    {
-        "name": "prayer-list",
-        "route": {
-            "sammy": "/prayer-list"
-        },
-        "page": "prayer-list",
-        "parts": {
-            "title": "Project 4:Twelve :: Prayer List",
-            "event": "prayer-list"
-        }
-    },
-    {
-        "name": "dream-team",
-        "route": {
-            "sammy": "/dream-team"
-        },
-        "page": "dream-team",
-        "parts": {
-            "title": "Project 4:Twelve :: Dream Team",
-            "event": "dream-team"
         }
     }
 ]

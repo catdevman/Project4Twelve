@@ -10,10 +10,10 @@ function handleErrors( $jQuery, knownErrors ){
     $jQuery.ajaxPrefilter( function jqueryAjaxPrefilter( options ){
         var requestError = options.error;
         var superError = function superErrorHandler( xhr, status, error ){
-            var pivotFriendlyErrorName; // It's probably just the actual HTTP spec name, FWIW
+            var project4TwelveFriendlyErrorName; // It's probably just the actual HTTP spec name, FWIW
 
             if( _( knownErrors.numbers ).indexOf( xhr.status ) > -1 ){
-                pivotFriendlyErrorName = knownErrors.name( xhr.status );
+                project4TwelveFriendlyErrorName = knownErrors.name( xhr.status );
 
                 knownErrors.handle( xhr.status, {
                     "xhr": xhr,
@@ -21,7 +21,7 @@ function handleErrors( $jQuery, knownErrors ){
                     "message": error
                 } );
 
-                RuleBreaker.console.error( pivotFriendlyErrorName + " -- " + error );
+                RuleBreaker.console.error( project4TwelveFriendlyErrorName + " -- " + error );
             }
 
             if( typeof requestError == "function" ){

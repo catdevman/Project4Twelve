@@ -3,7 +3,7 @@ import _ from "underscore";
 import md5 from "blueimp-md5";
 import base64 from "base-64";
 import utf8 from "utf8";
-import $ from "jquery";
+import $ from "strap/jquery";
 
 import RuleBreaker from "objects/RuleBreaker";
 

@@ -8,7 +8,7 @@ import CoreRoutes from "routers/core";
 // System Events
 import "events/project4twelve";
 
-var router = new Sammy();
+var router = new Sammy( ".app" );
 var loadedAt = document.location.pathname + document.location.search + document.location.hash;
 var loaded = 0;
 var loaders = [
