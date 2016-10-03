@@ -103,14 +103,8 @@
         "files": [
             {
                 "expand": true,
-                "cwd": "./build/js",
-                "src": [ "**/*.js" ],
-                "dest": "./www/build"
-            },
-            {
-                "expand": true,
-                "cwd": "./build/css",
-                "src": [ "**/*.css" ],
+                "cwd": "./build",
+                "src": [ "**" ],
                 "dest": "./www/build"
             }
         ]
