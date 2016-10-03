@@ -16,6 +16,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
@@ -24,4 +25,5 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="browser" spec="~4.1.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.5.0" />
 </widget>
